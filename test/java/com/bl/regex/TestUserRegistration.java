@@ -5,9 +5,9 @@ import org.junit.Test;
 
 public class TestUserRegistration {
     @Test
-    public void givenAEmailPatternWhenMatchedShouldReturnTrue(){
+    public void givenAMobileNumberPatternWhenMatchedShouldReturnTrue(){
         UserRegistration user = new UserRegistration();
-        boolean email = user.emailCheck("abc.xyz@bl.co.in");
-        Assert.assertTrue(email);
+        boolean number = user.numberCheck("91 7003321213");
+        Assert.assertTrue(number);
     }
 }
