@@ -5,9 +5,9 @@ import org.junit.Test;
 
 public class TestUserRegistration {
     @Test
-    public void givenAMobileNumberPatternWhenMatchedShouldReturnTrue(){
+    public void givenAPasswordPatternWhenMatchedShouldReturnTrue(){
         UserRegistration user = new UserRegistration();
-        boolean number = user.numberCheck("91 7003321213");
-        Assert.assertTrue(number);
+        boolean password = user.checkPassword("xxxxxxxx");
+        Assert.assertTrue(password);
     }
 }
